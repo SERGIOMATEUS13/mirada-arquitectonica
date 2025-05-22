@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mirada Arquitectónica</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway :wght@500&display=swap" rel="stylesheet" /> [[5]]
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Icono de WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css " />
+</head>
+<body>
+
+  <!-- Header con logo -->
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Logo Mirada Arquitectónica" class="logo" />
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <h1>Transformamos Espacios con Diseño y Funcionalidad</h1>
+    <p>Diseño de interiores y exteriores | Reparación | Restauración de muebles | Fabricación a medida</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="seccion">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <i class="fas fa-home"></i>
+        <h3>Diseño Interior</h3>
+        <p>Creamos espacios únicos y funcionales que reflejan tu estilo de vida.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-tree"></i>
+        <h3>Diseño Exterior</h3>
+        <p>Proyectos personalizados para terrazas, jardines y fachadas modernas.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-tools"></i>
+        <h3>Reparaciones</h3>
+        <p>Soluciones rápidas y duraderas para cualquier espacio dañado.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-couch"></i>
+        <h3>Restauración de Muebles</h3>
+        <p>Damos nueva vida a piezas antiguas o deterioradas con amor y cuidado.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-chair"></i>
+        <h3>Fabricación a Medida</h3>
+        <p>Muebles exclusivos hechos a la medida de tus necesidades y gustos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio" class="seccion">
+    <h2>Nuestro Portafolio</h2>
+    <div class="galeria">
+      <img src="https://cdn.pixabay.com/photo/2017/01/14/12/59/interior-1979834_1280.jpg " alt="Proyecto 1" />
+      <img src="https://cdn.pixabay.com/photo/2020/07/15/13/25/modern-interior-5408425_1280.jpg " alt="Proyecto 2" />
+      <img src="https://cdn.pixabay.com/photo/2019/09/12/11/59/living-room-4471472_1280.jpg " alt="Proyecto 3" />
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobremi" class="seccion">
+    <h2>Sobre Mí</h2>
+    <p>Soy un apasionado del diseño arquitectónico y la decoración de espacios. Con más de 10 años de experiencia en el sector, he trabajado en proyectos residenciales y comerciales, siempre buscando ofrecer soluciones creativas y estéticamente agradables. Mi objetivo es convertir cada rincón en una obra de arte funcional.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Puedes comunicarte conmigo al WhatsApp: <strong>302 539 0944</strong></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mirada Arquitectónica | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/3025390944 " target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Script de fondo aleatorio -->
+  <script>
+    const backgrounds = [
+      "https://cdn.pixabay.com/photo/2016/04/15/11/45/architecture-1330625_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2017/01/14/12/59/interior-1979834_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2018/05/13/23/19/morocco-3396019_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2020/07/15/13/25/modern-interior-5408425_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2019/09/12/11/59/living-room-4471472_1280.jpg "
+    ];
+    const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+    document.body.style.backgroundImage = `url('${randomBg}')`;
+  </script>
+
+</body>
+    </html>
