@@ -1,125 +1,117 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mirada Arquitectónica</title>
 
-/* Tipografía */
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #34495E;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  transition: background-image 0.5s ease-in-out;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway :wght@500&display=swap" rel="stylesheet" />
 
-/* Encabezado */
-header {
-  background-color: rgba(44, 62, 80, 0.8);
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 
-.logo-container img {
-  height: 60px;
-}
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css " />
+</head>
+<body>
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-}
+  <!-- Header con logo -->
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Logo Mirada Arquitectónica" class="logo" />
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-  text-shadow: 2px 2px 5px #000;
-}
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <h1>Transformamos Espacios con Diseño y Funcionalidad</h1>
+    <p>Diseño de interiores y exteriores | Reparación | Restauración de muebles | Fabricación a medida</p>
+  </section>
 
-/* Secciones */
-.seccion {
-  padding: 60px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin-top: 20px;
-}
+  <!-- Servicios -->
+  <section id="servicios" class="seccion">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <i class="fas fa-home"></i>
+        <h3>Diseño Interior</h3>
+        <p>Creamos espacios únicos y funcionales que reflejan tu estilo de vida.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-tree"></i>
+        <h3>Diseño Exterior</h3>
+        <p>Proyectos personalizados para terrazas, jardines y fachadas modernas.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-tools"></i>
+        <h3>Reparaciones</h3>
+        <p>Soluciones rápidas y duraderas para cualquier espacio dañado.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-couch"></i>
+        <h3>Restauración de Muebles</h3>
+        <p>Damos nueva vida a piezas antiguas o deterioradas con amor y cuidado.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-chair"></i>
+        <h3>Fabricación a Medida</h3>
+        <p>Muebles exclusivos hechos a la medida de tus necesidades y gustos.</p>
+      </div>
+    </div>
+  </section>
 
-.seccion h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: 'Raleway', sans-serif;
-  color: #2C3E50;
-}
+  <!-- Portafolio -->
+  <section id="portafolio" class="seccion">
+    <h2>Nuestro Portafolio</h2>
+    <div class="galeria">
+      <img src="https://cdn.pixabay.com/photo/2017/01/14/12/59/interior-1979834_1280.jpg " alt="Proyecto 1" />
+      <img src="https://cdn.pixabay.com/photo/2020/07/15/13/25/modern-interior-5408425_1280.jpg " alt="Proyecto 2" />
+      <img src="https://cdn.pixabay.com/photo/2019/09/12/11/59/living-room-4471472_1280.jpg " alt="Proyecto 3" />
+    </div>
+  </section>
 
-/* Servicios */
-.servicios-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
+  <!-- Sobre mí -->
+  <section id="sobremi" class="seccion">
+    <h2>Sobre Mí</h2>
+    <p>Soy un apasionado del diseño arquitectónico y la decoración de espacios. Con más de 10 años de experiencia en el sector, he trabajado en proyectos residenciales y comerciales, siempre buscando ofrecer soluciones creativas y estéticamente agradables. Mi objetivo es convertir cada rincón en una obra de arte funcional.</p>
+  </section>
 
-.servicio {
-  background-color: #ecf0f1;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
+  <!-- Contacto -->
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Puedes comunicarte conmigo al WhatsApp: <strong>302 539 0944</strong></p>
+  </section>
 
-.servicio i {
-  font-size: 2em;
-  color: #3498DB;
-  margin-bottom: 10px;
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mirada Arquitectónica | Todos los derechos reservados</p>
+  </footer>
 
-/* Galería */
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/3025390944 " target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-.galeria img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  height: 200px;
-}
+  <!-- Script de fondo aleatorio -->
+  <script>
+    const backgrounds = [
+      "https://cdn.pixabay.com/photo/2016/04/15/11/45/architecture-1330625_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2017/01/14/12/59/interior-1979834_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2018/05/13/23/19/morocco-3396019_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2020/07/15/13/25/modern-interior-5408425_1280.jpg ",
+      "https://cdn.pixabay.com/photo/2019/09/12/11/59/living-room-4471472_1280.jpg "
+    ];
+    const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+    document.body.style.backgroundImage = `url('${randomBg}')`;
+  </script>
 
-/* Footer */
-footer {
-  background-color: #2C3E50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-/* Botón WhatsApp */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  z-index: 1000;
-  transition: transform 0.2s;
-}
-
-.whatsapp-button:hover {
-  transform: scale(1.1);
-}
+</body>
+</html>
